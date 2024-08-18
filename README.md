@@ -5,6 +5,7 @@ If you'd like to get a head-start on the class, you can make an edit to this Rea
 Give it a try! Add you your name between the lines below.
 ___
 - Paul
+- remote mobbing machine
 ___
 
 This repository is part of [@pdmoore](https://github.com/pdmoore)'s Advanced Certified Scrum Developer course.
