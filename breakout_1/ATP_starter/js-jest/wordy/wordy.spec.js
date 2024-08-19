@@ -5,23 +5,23 @@ describe('Wordy', () => {
     expect(answer('What is 5?')).toEqual(5);
   });
 
-  xtest('addition', () => {
+  test('addition', () => {
     expect(answer('What is 1 plus 1?')).toEqual(2);
   });
 
-  xtest('more addition', () => {
+  test('more addition', () => {
     expect(answer('What is 53 plus 2?')).toEqual(55);
   });
 
-  xtest('addition with negative numbers', () => {
+  test('addition with negative numbers', () => {
     expect(answer('What is -1 plus -10?')).toEqual(-11);
   });
 
-  xtest('large addition', () => {
+  test('large addition', () => {
     expect(answer('What is 123 plus 45678?')).toEqual(45801);
   });
 
-  xtest('subtraction', () => {
+  test('subtraction', () => {
     expect(answer('What is 4 minus -12?')).toEqual(16);
   });
 
