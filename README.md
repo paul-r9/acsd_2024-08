@@ -7,6 +7,7 @@ ___
 - Paul
 - remote mobbing machine
 - Ed Fenton
+- Toño Jimenez
 ___
 
 This repository is part of [@pdmoore](https://github.com/pdmoore)'s Advanced Certified Scrum Developer course.
