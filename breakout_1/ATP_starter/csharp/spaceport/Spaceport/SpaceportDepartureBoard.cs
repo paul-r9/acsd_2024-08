@@ -13,8 +13,12 @@ namespace SpacePort
             SortLaunches();
         }
 
+        private int SortByDestination(LaunchInfo destination1, LaunchInfo destination2) {
+            return destination1.Destination.CompareTo(destination2.Destination);
+        }
+
         private void SortLaunches() {
-            throw new NotImplementedException("sorting logic hasn't been implemented yet");
+            LaunchList.Sort(SortByDestination);
         }
 
         internal void RemoveInactiveLaunches()
