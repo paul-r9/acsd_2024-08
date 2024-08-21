@@ -26,8 +26,8 @@ public class StepDefinitions {
         items[0].quality = quality;
     }
 
-    @When("I update the quality")
-    public void i_update_the_quality() {
+    @When("I update the shop inventory")
+    public void i_update_the_shop_inventory() {
         app.updateQuality();
     }
 
