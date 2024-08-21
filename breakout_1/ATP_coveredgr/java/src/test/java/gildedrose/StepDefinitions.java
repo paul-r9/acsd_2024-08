@@ -36,6 +36,11 @@ public class StepDefinitions {
         assertEquals(expected, app.items[0].name);
     }
 
+    @Then("I should get item with SellIn of {int}")
+    public void i_should_get_item_with_sell_in_of(Integer expected) {
+        assertEquals(expected.intValue(), app.items[0].sellIn);
+    }
+
     @Then("I should get item with Quality of {int}")
     public void i_should_get_item_with_quality_of(Integer expected) {
         assertEquals(expected.intValue(), app.items[0].quality);
