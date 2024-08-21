@@ -144,6 +144,22 @@ public class GildedRoseTest {
         assertEquals(50, sut.items[0].quality, "Backstage pass, very close to sellIn date, is still capped at maximum quality");
     }
 
+    //TODO: NEW BEHAVIOR
+    // conjured items
+    @Test
+    void conjured_item_before_sellin_decreases_twice_as_fast_as_normal_item() {
+        GildedRose sut = new GildedRose(createItemArray("Conjured Mana Bun", 10, 5));
+        sut.updateQuality();
+        assertEquals(3, sut.items[0].quality);
+    }
+
+    @Test
+    void conjured_item_after_sellin_decreases_twice_as_twice_as_fast() {
+        GildedRose sut = new GildedRose(createItemArray("Conjured Mana Bun", 0, 10));
+        sut.updateQuality();
+        assertEquals(6, sut.items[0].quality);
+    }
+
     @Test
     void ShopContainsMultipleItems() {
         Item[] items = new Item[] { new Item("Sulfuras, Hand of Ragnaros", 0, 80),
@@ -158,6 +174,5 @@ public class GildedRoseTest {
         );
     }
 
-    //TODO: NEW BEHAVIOR
-    // conjured items
+
 }
