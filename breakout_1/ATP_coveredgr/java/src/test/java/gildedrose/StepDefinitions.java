@@ -26,14 +26,19 @@ public class StepDefinitions {
         items[0].quality = quality;
     }
 
-    @When("I update the quality")
-    public void i_update_the_quality() {
+    @When("I update the shop inventory")
+    public void i_update_the_shop_inventory() {
         app.updateQuality();
     }
 
     @Then("I should get item as {string}")
     public void i_should_get_sellin_as_and_quality_as(String expected) {
         assertEquals(expected, app.items[0].name);
+    }
+
+    @Then("I should get item with SellIn of {int}")
+    public void i_should_get_item_with_sell_in_of(Integer expected) {
+        assertEquals(expected.intValue(), app.items[0].sellIn);
     }
 
     @Then("I should get item with Quality of {int}")
